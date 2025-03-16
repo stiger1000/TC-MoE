@@ -3,12 +3,12 @@
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue)](https://huggingface.co/stiger1000/TC-MoE)
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This repository provides the code for the paper ![TC-MoE: Augmenting Mixture of Experts with Ternary Expert Choice](https://zhouchenlin.github.io/Publications/2025-ICLR-TC-MoE.pdf)
+This repository provides the code for the paper [TC-MoE: Augmenting Mixture of Experts with Ternary Expert Choice](https://zhouchenlin.github.io/Publications/2025-ICLR-TC-MoE.pdf)
 
 ## Key Features
-✅ ​**Ternary Expert Space**  
+✅ **Ternary Expert Space**  
 Expands expert capacity with {-1, 0, 1} multipliers at minimal computational cost
-![](figures/method.pdf)
+<img src="figures/method.png" alt="" width="500" height="300">
 
 🚀 ​**Efficiency Gains**  
 Reduces activated experts by ​**9%** while improving average performance by ​**1.1%**  
