@@ -1,14 +1,14 @@
 # [ICLR 2025] TC-MoE: Augmenting Mixture of Experts with Ternary Expert Choice
 
-[Paper](https://zhouchenlin.github.io/Publications/2025-ICLR-TC-MoE.pdf)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue)](https://huggingface.co/stiger1000/TC-MoE)
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
-![TC-MoE Architecture](figures/method.pdf)
+This repository provides the code for the paper ![TC-MoE: Augmenting Mixture of Experts with Ternary Expert Choice](https://zhouchenlin.github.io/Publications/2025-ICLR-TC-MoE.pdf)
 
 ## Key Features
 ✅ ​**Ternary Expert Space**  
-Expands expert capacity with {-1, 0, 1} multipliers at minimal computational cost  
+Expands expert capacity with {-1, 0, 1} multipliers at minimal computational cost
+![](figures/method.pdf)
 
 🚀 ​**Efficiency Gains**  
 Reduces activated experts by ​**9%** while improving average performance by ​**1.1%**  
@@ -20,11 +20,9 @@ Novel load balance loss ensures equitable expert utilization
 Reward loss mechanism for efficiency-effectiveness optimization
 
 ## Main Results
-
 ![](figures/results.png)
 
 ## Usage
-
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 model = AutoModelForCausalLM.from_pretrained("stiger1000/TC-MoE")
