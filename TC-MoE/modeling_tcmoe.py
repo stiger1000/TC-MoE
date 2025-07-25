@@ -334,7 +334,6 @@ class TCMoEBlock(nn.Module):
                 current_hidden_states = expert_layer(current_state) * weights[top_x, idx, None]
             else:
                 current_hidden_states = expert_layer(current_state) * weights[top_x, idx, None] * -1.0
-            current_hidden_states = expert_layer(current_state) * weights[top_x, idx, None]
 
             # However `index_add_` only support torch tensors for indexing so we'll use
             # the `top_x` tensor here.
